@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <CusNav></CusNav>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
     </div>
   );
 };
