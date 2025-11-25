@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import CusNav from "./Components/CusNav";
 import PricingCards from "./Components/PricingCards";
 import ResultCharts from "./Components/ResultCharts";
+import FruitShow from "./Components/FruitShow";
 
 const App = () => {
   const pricingData= fetch('pricingData.json') .then(res=>res.json());
@@ -14,6 +15,7 @@ const App = () => {
         <PricingCards pricingData={pricingData}></PricingCards>
       </Suspense>
       <ResultCharts></ResultCharts>
+      <FruitShow></FruitShow>
     </div>
   );
 };
