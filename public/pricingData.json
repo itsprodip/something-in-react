@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "Basic",
+    "price": "9",
+    "features": [
+      "Access to core features",
+      "5 Projects",
+      "Basic Support",
+      "Community Access"
+    ],
+    "button_text": "Get Started",
+    "popular": false
+  },
+  {
+    "id": 2,
+    "title": "Pro",
+    "price": "19",
+    "features": [
+      "Everything in Basic",
+      "Unlimited Projects",
+      "Priority Support",
+      "Advanced Analytics",
+      "Team Collaboration"
+    ],
+    "button_text": "Upgrade Now",
+    "popular": true
+  },
+  {
+    "id": 3,
+    "title": "Enterprise",
+    "price": "49",
+    "features": [
+      "Everything in Pro",
+      "Dedicated Account Manager",
+      "Custom Integrations",
+      "24/7 Premium Support",
+      "Security Suite"
+    ],
+    "button_text": "Contact Sales",
+    "popular": false
+  }
+]
