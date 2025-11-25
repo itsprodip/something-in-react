@@ -5,7 +5,7 @@ const PricingCard = ({pricing}) => {
     const {id,title,price,features,button_text: button}=pricing;
     return (
       <div
-        className={` rounded-lg shadow-2xl text-[#202842] px-10 py-5 space-y-4 w-full${
+        className={` rounded-lg shadow-2xl text-[#202842] px-10 py-5 space-y-4 w-full ${
           id === 2 ? "bg-[#202842] text-white" : "bg-white"
         } `}
       >
@@ -19,11 +19,7 @@ const PricingCard = ({pricing}) => {
             </li>
           ))}
         </ul>
-        <button
-          className={`btn  mx-auto rounded-full ${
-            id === 2 ? "bg-white" : "bg-[#202842] text-white"
-          }`}
-        >
+        <button className={`btn  mx-auto rounded-full ${id === 2 ? "bg-white" : "bg-[#202842] text-white"}`}>
           {button}
         </button>
       </div>
