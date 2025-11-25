@@ -7,7 +7,7 @@ const PricingCards = ({ pricingData }) => {
   return (
     <div className="w-11/12 mx-auto bg-[#070027] rounded-lg px-20 py-10" >
       <h2>Get our subscriptions</h2>
-      <div className="flex bg-[#f4f2fd] px-20 py-10 rounded-lg gap-5 justify-around">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 bg-[#f4f2fd] px-20 py-10 rounded-lg gap-5 justify-around">
         {priceData.map((pricing) => (
           <PricingCard key={pricing.id} pricing={pricing}></PricingCard>
         ))}
