@@ -33,13 +33,16 @@ const CusNav = () => {
   const [open, setOpen] = useState(false);
   return (
     <nav className="flex justify-between px-4 py-3">
-        {/* for small screen */}
+      {/* for small screen */}
       <span className="flex" onClick={() => setOpen(!open)}>
         {open ? <X className="md:hidden" /> : <Menu className="md:hidden" />}
 
-        <ul className="md:hidden absolute top-9 bg-gray-400">
+        <ul className={`md:hidden absolute duration-1000
+          ${open ? "top-9" : "-top-40"}
+          
+          bg-gray-400`}>
           {navLinks.map((link) => (
-            <li key={link.id} className="mr-10">
+            <li key={link.id} className="px-5 text-white hover:bg-amber-300">
               <a href={link.path}>{link.name}</a>
             </li>
           ))}
